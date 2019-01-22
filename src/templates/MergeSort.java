@@ -48,9 +48,8 @@ public class MergeSort {
       temp[tempIndex++] = nums[rightIndex++];
     }
 
-    System.out.println("start: " + start);
-    for (int i = 0; i <= end; i++) {
-      nums[i] = temp[i];
+    for (tempIndex = start; tempIndex <= end; tempIndex++) {
+      nums[tempIndex] = temp[tempIndex];
     }
   }
 }

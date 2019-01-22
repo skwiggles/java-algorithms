@@ -14,9 +14,6 @@ public class BinarySearch {
     while (start + 1 < end) {
 
       int mid = start + (end - start) / 2;
-      System.out.println("start: " + start);
-      System.out.println("end: " + end);
-      System.out.println("mid: " + mid);
 
       if (nums[mid] < target) {
         start = mid;
