@@ -1,3 +1,13 @@
+# MacOS
+**/.DS_Store
+
+# IntelliJ
+out/
+.idea/
+*.iws
+*.iml
+*.ipr
+
 # Compiled class file
 *.class
 
