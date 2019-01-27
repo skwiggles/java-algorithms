@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import templates.BinarySearch;
+import templates.Combination;
 import templates.MergeSort;
+import templates.Permutation;
 import templates.QuickSelect;
 import templates.QuickSort;
 
@@ -29,5 +31,17 @@ public class Main {
     System.out.println(
         "the " + k + "th largest number in " + Arrays.toString(numsQuickSelect) + " is "
             + QuickSelect.solution(numsQuickSelect, k));
+
+    // find all combination, total number is 2^n
+    int[] combinationWoDup = {1, 2, 3};
+    int[] combinationWithDup = {1, 2, 2};
+    System.out.println(Combination.solution(combinationWoDup));
+    System.out.println(Combination.solution(combinationWithDup));
+
+    // find all permutation, total number is n!
+    int[] permutationWoDup = {1, 2, 3};
+    int[] permutationWithDup = {1, 2, 2};
+    System.out.println(Permutation.solution(permutationWoDup));
+    System.out.println(Permutation.solution(permutationWithDup));
   }
 }

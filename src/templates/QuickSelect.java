@@ -7,7 +7,7 @@ public class QuickSelect {
     if (nums == null || nums.length == 0 || k < 1 || k > nums.length) {
       return -1;
     }
-
+    // nums.length - k is the index of the kth largest number in nums
     return quickSelect(nums, 0, nums.length - 1, nums.length - k);
   }
 
